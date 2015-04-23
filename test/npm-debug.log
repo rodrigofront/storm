@@ -1,0 +1,175 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 warn package.json storm@ No description
+6 warn package.json storm@ No repository field.
+7 warn package.json storm@ No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ '/home/rivello/storm',
+9 verbose install   [ 'apache-server-configs',
+9 verbose install     'grunt',
+9 verbose install     'grunt-autoprefixer',
+9 verbose install     'grunt-concurrent',
+9 verbose install     'grunt-contrib-clean',
+9 verbose install     'grunt-contrib-concat',
+9 verbose install     'grunt-contrib-connect',
+9 verbose install     'grunt-contrib-copy',
+9 verbose install     'grunt-contrib-cssmin',
+9 verbose install     'grunt-contrib-htmlmin',
+9 verbose install     'grunt-contrib-imagemin',
+9 verbose install     'grunt-contrib-jshint',
+9 verbose install     'grunt-contrib-uglify',
+9 verbose install     'grunt-contrib-watch',
+9 verbose install     'grunt-mocha',
+9 verbose install     'grunt-modernizr',
+9 verbose install     'grunt-newer',
+9 verbose install     'grunt-rev',
+9 verbose install     'grunt-sass',
+9 verbose install     'grunt-svgmin',
+9 verbose install     'grunt-usemin',
+9 verbose install     'grunt-wiredep',
+9 verbose install     'jshint-stylish',
+9 verbose install     'load-grunt-tasks',
+9 verbose install     'time-grunt' ] ]
+10 info preinstall storm@
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping apache-server-configs@^2.7.1 /home/rivello/storm
+13 verbose already installed skipping grunt@^0.4.5 /home/rivello/storm
+14 verbose already installed skipping grunt-autoprefixer@^1.0.0 /home/rivello/storm
+15 verbose already installed skipping grunt-concurrent@^0.5.0 /home/rivello/storm
+16 verbose already installed skipping grunt-contrib-clean@^0.6.0 /home/rivello/storm
+17 verbose already installed skipping grunt-contrib-concat@^0.5.0 /home/rivello/storm
+18 verbose already installed skipping grunt-contrib-connect@^0.8.0 /home/rivello/storm
+19 verbose already installed skipping grunt-contrib-copy@^0.5.0 /home/rivello/storm
+20 verbose already installed skipping grunt-contrib-cssmin@^0.10.0 /home/rivello/storm
+21 verbose already installed skipping grunt-contrib-htmlmin@^0.3.0 /home/rivello/storm
+22 verbose already installed skipping grunt-contrib-imagemin@^0.8.0 /home/rivello/storm
+23 verbose already installed skipping grunt-contrib-jshint@^0.10.0 /home/rivello/storm
+24 verbose already installed skipping grunt-contrib-uglify@^0.5.1 /home/rivello/storm
+25 verbose already installed skipping grunt-contrib-watch@^0.6.1 /home/rivello/storm
+26 verbose already installed skipping grunt-mocha@^0.4.10 /home/rivello/storm
+27 verbose already installed skipping grunt-modernizr@^0.5.2 /home/rivello/storm
+28 verbose already installed skipping grunt-newer@^0.7.0 /home/rivello/storm
+29 verbose already installed skipping grunt-rev@^0.1.0 /home/rivello/storm
+30 verbose already installed skipping grunt-sass@^0.14.0 /home/rivello/storm
+31 verbose already installed skipping grunt-svgmin@^0.4.0 /home/rivello/storm
+32 verbose already installed skipping grunt-usemin@^2.3.0 /home/rivello/storm
+33 verbose already installed skipping grunt-wiredep@^1.7.0 /home/rivello/storm
+34 verbose already installed skipping jshint-stylish@^0.4.0 /home/rivello/storm
+35 verbose already installed skipping load-grunt-tasks@^0.4.0 /home/rivello/storm
+36 verbose already installed skipping time-grunt@^0.4.0 /home/rivello/storm
+37 silly resolved []
+38 info build /home/rivello/storm
+39 verbose linkStuff [ false, false, false, '/home/rivello' ]
+40 info linkStuff storm@
+41 verbose linkBins storm@
+42 verbose linkMans storm@
+43 verbose rebuildBundles storm@
+44 verbose rebuildBundles [ '.bin',
+44 verbose rebuildBundles   'apache-server-configs',
+44 verbose rebuildBundles   'generator-mocha',
+44 verbose rebuildBundles   'generator-webapp',
+44 verbose rebuildBundles   'grunt',
+44 verbose rebuildBundles   'grunt-autoprefixer',
+44 verbose rebuildBundles   'grunt-concurrent',
+44 verbose rebuildBundles   'grunt-contrib-clean',
+44 verbose rebuildBundles   'grunt-contrib-concat',
+44 verbose rebuildBundles   'grunt-contrib-connect',
+44 verbose rebuildBundles   'grunt-contrib-copy',
+44 verbose rebuildBundles   'grunt-contrib-cssmin',
+44 verbose rebuildBundles   'grunt-contrib-htmlmin',
+44 verbose rebuildBundles   'grunt-contrib-imagemin',
+44 verbose rebuildBundles   'grunt-contrib-jshint',
+44 verbose rebuildBundles   'grunt-contrib-uglify',
+44 verbose rebuildBundles   'grunt-contrib-watch',
+44 verbose rebuildBundles   'grunt-mocha',
+44 verbose rebuildBundles   'grunt-modernizr',
+44 verbose rebuildBundles   'grunt-newer',
+44 verbose rebuildBundles   'grunt-rev',
+44 verbose rebuildBundles   'grunt-sass',
+44 verbose rebuildBundles   'grunt-svgmin',
+44 verbose rebuildBundles   'grunt-usemin',
+44 verbose rebuildBundles   'grunt-wiredep',
+44 verbose rebuildBundles   'jshint-stylish',
+44 verbose rebuildBundles   'load-grunt-tasks',
+44 verbose rebuildBundles   'time-grunt',
+44 verbose rebuildBundles   'yo' ]
+45 verbose rebuild bundle /home/rivello/storm/node_modules/generator-mocha
+46 info build /home/rivello/storm/node_modules/generator-mocha
+47 info preinstall generator-mocha@0.1.7
+48 verbose linkStuff [ false, false, false, '/home/rivello/storm/node_modules' ]
+49 info linkStuff generator-mocha@0.1.7
+50 verbose linkBins generator-mocha@0.1.7
+51 verbose linkMans generator-mocha@0.1.7
+52 verbose rebuildBundles generator-mocha@0.1.7
+53 verbose rebuildBundles [ 'yeoman-generator' ]
+54 info install generator-mocha@0.1.7
+55 info postinstall generator-mocha@0.1.7
+56 verbose rebuild bundle /home/rivello/storm/node_modules/generator-webapp
+57 info build /home/rivello/storm/node_modules/generator-webapp
+58 info preinstall generator-webapp@0.5.1
+59 verbose linkStuff [ false, false, false, '/home/rivello/storm/node_modules' ]
+60 info linkStuff generator-webapp@0.5.1
+61 verbose linkBins generator-webapp@0.5.1
+62 verbose linkMans generator-webapp@0.5.1
+63 verbose rebuildBundles generator-webapp@0.5.1
+64 verbose rebuildBundles [ '.bin', 'chalk', 'cheerio', 'yeoman-generator', 'yosay' ]
+65 info install generator-webapp@0.5.1
+66 info postinstall generator-webapp@0.5.1
+67 verbose rebuild bundle /home/rivello/storm/node_modules/yo
+68 info build /home/rivello/storm/node_modules/yo
+69 info preinstall yo@1.4.6
+70 verbose linkStuff [ false, false, false, '/home/rivello/storm/node_modules' ]
+71 info linkStuff yo@1.4.6
+72 verbose linkBins yo@1.4.6
+73 verbose link bins [ { yo: 'lib/cli.js' },
+73 verbose link bins   '/home/rivello/storm/node_modules/.bin',
+73 verbose link bins   false ]
+74 verbose linkMans yo@1.4.6
+75 verbose rebuildBundles yo@1.4.6
+76 verbose rebuildBundles [ '.bin',
+76 verbose rebuildBundles   'array-uniq',
+76 verbose rebuildBundles   'async',
+76 verbose rebuildBundles   'chalk',
+76 verbose rebuildBundles   'configstore',
+76 verbose rebuildBundles   'cross-spawn',
+76 verbose rebuildBundles   'figures',
+76 verbose rebuildBundles   'findup',
+76 verbose rebuildBundles   'fullname',
+76 verbose rebuildBundles   'got',
+76 verbose rebuildBundles   'humanize-string',
+76 verbose rebuildBundles   'inquirer',
+76 verbose rebuildBundles   'insight',
+76 verbose rebuildBundles   'lodash',
+76 verbose rebuildBundles   'meow',
+76 verbose rebuildBundles   'npm-keyword',
+76 verbose rebuildBundles   'opn',
+76 verbose rebuildBundles   'package-json',
+76 verbose rebuildBundles   'root-check',
+76 verbose rebuildBundles   'sort-on',
+76 verbose rebuildBundles   'string-length',
+76 verbose rebuildBundles   'titleize',
+76 verbose rebuildBundles   'update-notifier',
+76 verbose rebuildBundles   'user-home',
+76 verbose rebuildBundles   'yeoman-character',
+76 verbose rebuildBundles   'yeoman-doctor',
+76 verbose rebuildBundles   'yeoman-environment',
+76 verbose rebuildBundles   'yosay' ]
+77 error Error: EACCES, unlink '/home/rivello/storm/node_modules/.bin/yo'
+77 error  { [Error: EACCES, unlink '/home/rivello/storm/node_modules/.bin/yo']
+77 error   errno: 3,
+77 error   code: 'EACCES',
+77 error   path: '/home/rivello/storm/node_modules/.bin/yo' }
+78 error Please try running this command again as root/Administrator.
+79 error System Linux 3.13.0-37-generic
+80 error command "/usr/bin/node" "/usr/bin/npm" "install"
+81 error cwd /home/rivello/storm/test
+82 error node -v v0.10.38
+83 error npm -v 1.4.28
+84 error path /home/rivello/storm/node_modules/.bin/yo
+85 error code EACCES
+86 error errno 3
+87 error stack Error: EACCES, unlink '/home/rivello/storm/node_modules/.bin/yo'
+88 verbose exit [ 3, true ]
