@@ -52,7 +52,7 @@ module.exports = function (grunt) {
       },
 		/* ... */
 		jade: {
-		files: ['<%= yeoman.app %>/{,*/}*.jade'],
+		files: ['<%= config.app %>/{,*/}*.jade'],
 		tasks: ['jade']
 		},
       js: {
