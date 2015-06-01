@@ -1,0 +1,168 @@
+//---------------------------------------------------------------------------
+// Buttons
+//---------------------------------------------------------------------------
+.btn {
+    @extend %forms-style-border;
+    @extend %forms-style-type;
+    @extend %forms-height-base;
+
+    display: inline-block;
+
+    padding-left: $btn-padding-lr-base;
+    padding-right: $btn-padding-lr-base;
+
+    font-family: $font-family-base;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+
+    cursor: pointer;
+
+    // :hover & :focus
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    // :active
+    &:not(.field-add-on):active {
+        position: relative;
+        top: 1px;
+    }
+
+    // active
+    &.btn-active {
+        @extend .btn-default:hover;
+    }
+
+    // disabled
+    &[disabled],
+    &.disabled {
+        @include opacity(.7);
+        cursor: default;
+
+        &:active {
+            top: 0;
+        }
+    }
+
+    // full
+    &.btn-full {
+        width: 100%;
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+
+        + .btn {
+            margin-left: 0;
+        }
+    }
+
+    + .btn {
+        margin-left: 10px;
+    }
+
+    // icon
+    #{$icon-selector} {
+        font-size: 16px;
+        vertical-align: text-bottom;
+    }
+
+
+    //---------------------------------------------------------------------------
+    // Buttons Variants
+    //
+    // button-variant ($color, $textShadow, $border, $bgStarting, $bgEnding)
+    //---------------------------------------------------------------------------
+    &.btn-link {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        border: 0;
+        background: none;
+
+        color: $link-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        #{$icon-selector} {
+            color: $color-base-darker;
+        }
+
+        &.btn-small {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &.btn-default {
+        @include button-variant($btn-default-color, $btn-default-text-shadow, $btn-default-border, $btn-default-bg-from, $btn-default-bg-to);
+
+        // #{$icon-selector} {
+        //     color: $color-base-darker;
+        // }
+    }
+
+    &.btn-primary {
+        @include button-variant($btn-primary-color, $btn-primary-text-shadow, $btn-primary-border, $btn-primary-bg-from, $btn-primary-bg-to);
+    }
+
+    &.btn-secondary {
+        @include button-variant($btn-secondary-color, $btn-secondary-text-shadow, $btn-secondary-border, $btn-secondary-bg-from, $btn-secondary-bg-to);
+    }
+
+    &.btn-danger {
+        @include button-variant($btn-danger-color, $btn-danger-text-shadow, $btn-danger-border, $btn-danger-bg-from, $btn-danger-bg-to);
+    }
+
+    &.btn-success {
+        @include button-variant($btn-success-color, $btn-success-text-shadow, $btn-success-border, $btn-success-bg-from, $btn-success-bg-to);
+    }
+
+
+    //---------------------------------------------------------------------------
+    // Buttons sizes
+    //---------------------------------------------------------------------------
+
+    &.btn-medium {
+        @extend %forms-height-medium;
+
+        padding-left: $btn-padding-lr-medium;
+        padding-right: $btn-padding-lr-medium;
+
+        font-size: 14px;
+
+        #{$icon-selector} {
+            font-size: 16px;
+        }
+    }
+
+    &.btn-large {
+        @extend %forms-height-large;
+
+        padding-left: $btn-padding-lr-large;
+        padding-right: $btn-padding-lr-large;
+
+        font-size: 16px;
+
+        #{$icon-selector} {
+            font-size: 18px;
+        }
+    }
+
+
+    //---------------------------------------------------------------------------
+    // Special Effects
+    //---------------------------------------------------------------------------
+    &.btn-thin {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+//inline
+.link-set-due-date {
+    margin-top: 5px;
+    margin-left: 0 !important;
+}

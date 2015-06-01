@@ -1,0 +1,49 @@
+// vars & mixins
+@import "variables";
+@import "mixins";
+@import "placeholders";
+
+// bootstrap
+@import "bootstrap/reset";
+@import "bootstrap/normalize";
+@import "bootstrap/utils";
+
+@import "bootstrap/grid";
+@import "bootstrap/grid-utils";
+
+
+//---------------------------------------------------------------------------
+// Font Style
+//---------------------------------------------------------------------------
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+}
+
+p {
+    line-height: 140%;
+}
+
+body {
+    color: $text-color;
+}
+
+// link
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.link-secondary {
+        color: $link-color-secondary;
+    }
+}

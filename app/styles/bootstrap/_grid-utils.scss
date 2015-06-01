@@ -1,0 +1,54 @@
+@import "bootstrap/grid";
+
+
+//---------------------------------------------------------------------------
+// Grid utils
+//---------------------------------------------------------------------------
+.grid-alpha { padding-left: 0 !important; }
+.grid-omega { padding-right: 0 !important; }
+
+
+// fix padding
+.grid-fix-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @include grid-selector(">") {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+// grid-spacing
+@include tablet-view {
+    .tablet-grid-spacing {
+        @include grid-selector(">") {
+            padding-top: 20px;
+
+            &:first-of-type,
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@include mobile-view {
+    .grid-container {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .mobile-grid-spacing {
+        @include grid-selector(">") {
+            padding-top: 20px;
+
+            &:first-of-type,
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
+

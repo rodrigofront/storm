@@ -1,0 +1,206 @@
+//---------------------------------------------------------------------------
+// Variables
+
+// ${element}-{attr}-{category}
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+// Paths
+//---------------------------------------------------------------------------
+$image-path : "../images";
+$font-path  : "fonts";
+
+
+//---------------------------------------------------------------------------
+// Fonts
+//---------------------------------------------------------------------------
+$font-family-sans-serif : Arial, sans-serif;
+$font-family-base       : $font-family-sans-serif;
+
+// size
+$font-size-base: 13px;
+
+
+//---------------------------------------------------------------------------
+// Brand colors
+//---------------------------------------------------------------------------
+$color-base                : #666;
+$color-base-darker         : #333;
+$color-base-lighter        : #999;
+$color-base-x-lighter      : #ccc;
+
+$color-default             : #eee;
+$color-default-darker      : #ddd;
+$color-default-lighter     : #f5f5f5;
+$color-default-x-lighter   : #fff;
+
+$color-primary             : #008fc9;
+$color-primary-darker      : #004051;
+$color-primary-lighter     : #c1e4f4;
+$color-primary-x-lighter   : #d9edf7;
+$color-primary-xx-lighter  : #ebf5fa;
+
+$color-secondary           : #fdc300; // #fdc300
+$color-secondary-darker    : #fcb200; // #cc6600
+$color-secondary-lighter   : #fed500; // #fede69
+$color-secondary-x-lighter : #ffffea; // #ffffea
+
+$color-success             : #56bb23;
+$color-success-darker      : #693;
+$color-success-lighter     : #b5e981;
+$color-success-x-lighter   : #e0f5cc;
+
+$color-danger              : #c00;
+$color-danger-darker       : #900;
+$color-danger-lighter      : #de7575;
+$color-danger-x-lighter    : #f7cccc;
+
+
+//---------------------------------------------------------------------------
+// Text colors
+//---------------------------------------------------------------------------
+$text-color             : $color-base;
+$text-color-darker      : $color-primary-darker;
+
+$form-color             : $color-base-darker;
+$form-placeholder-color : $color-base-lighter;
+
+
+//---------------------------------------------------------------------------
+// Link colors
+//---------------------------------------------------------------------------
+$link-color: $color-primary;
+$link-color-secondary: $color-secondary;
+
+
+//---------------------------------------------------------------------------
+// Borders
+//---------------------------------------------------------------------------
+$border-radius-base           : 3px;
+$border-radius-large          : 4px;
+
+$border-color-base            : $color-base-x-lighter;
+$border-color-base-lighter    : #d4d4d4;
+
+$border-color-primary         : #006b96;
+$border-color-primary-lighter : $color-primary-lighter;
+
+$border-color-secondary       : #e29f00;
+
+$border-color-danger          : $color-danger-darker;
+
+$border-color-success         : $color-success-darker;
+
+
+//---------------------------------------------------------------------------
+// Heading
+//---------------------------------------------------------------------------
+$h1-font-size : 44px;
+$h2-font-size : 40px;
+$h3-font-size : 32px;
+$h4-font-size : 26px;
+$h5-font-size : 20px;
+$h6-font-size : 16px;
+
+
+//---------------------------------------------------------------------------
+// Backgrounds
+//---------------------------------------------------------------------------
+$bg-warning        : $color-secondary-x-lighter;
+
+
+// gradients
+$bg-default-from   : #fff;
+$bg-default-to     : #e8e8e8;
+
+$bg-primary-from   : $color-primary;
+$bg-primary-to     : #0078a8;
+
+$bg-secondary-from : $color-secondary-lighter;
+$bg-secondary-to   : $color-secondary-darker;
+
+$bg-danger-from    : #d63030;
+$bg-danger-to      : #ab0000;
+
+$bg-success-from   : #84d65b;
+$bg-success-to     : #56ac2b;
+
+
+//---------------------------------------------------------------------------
+// Buttons Styles
+//---------------------------------------------------------------------------
+$btn-default-color         : $color-primary;
+$btn-default-text-shadow   : #fff;
+$btn-default-border        : $border-color-base;
+$btn-default-bg-from       : $bg-default-from;
+$btn-default-bg-to         : $bg-default-to;
+
+$btn-primary-color         : #fff;
+$btn-primary-text-shadow   : #005065;
+$btn-primary-border        : $border-color-primary;
+$btn-primary-bg-from       : $bg-primary-from;
+$btn-primary-bg-to         : $bg-primary-to;
+
+$btn-secondary-color       : $color-primary-darker;
+$btn-secondary-text-shadow : #fed800;
+$btn-secondary-border      : $border-color-secondary;
+$btn-secondary-bg-from     : $bg-secondary-from;
+$btn-secondary-bg-to       : $bg-secondary-to;
+
+$btn-danger-color          : #fff;
+$btn-danger-text-shadow    : rgba(#333, .4);
+$btn-danger-border         : $border-color-danger;
+$btn-danger-bg-from        : $bg-danger-from;
+$btn-danger-bg-to          : $bg-danger-to;
+
+$btn-success-color         : #fff;
+$btn-success-text-shadow   : rgba(#333, .4);
+$btn-success-border        : $border-color-success;
+$btn-success-bg-from       : $bg-success-from;
+$btn-success-bg-to         : $bg-success-to;
+
+
+//---------------------------------------------------------------------------
+// Buttons Padding
+//---------------------------------------------------------------------------
+$btn-padding-lr-base   : 10px;
+$btn-padding-lr-medium : 13px;
+$btn-padding-lr-large  : 16px;
+
+
+//---------------------------------------------------------------------------
+// Forms
+//---------------------------------------------------------------------------
+// padding
+$forms-padding-tb-base   : 6px;
+$forms-padding-lr-base   : 6px;
+
+$forms-padding-tb-medium : 8px;
+$forms-padding-lr-medium : 8px;
+
+$forms-padding-tb-large  : 10px;
+$forms-padding-lr-large  : 10px;
+
+// height
+$forms-height-base       : 30px;
+$forms-height-medium     : 36px;
+$forms-height-large      : 42px;
+
+
+
+//---------------------------------------------------------------------------
+// Image
+//---------------------------------------------------------------------------
+$image-caption-color : #fff;
+$image-caption-bg    : $color-primary;
+
+
+//---------------------------------------------------------------------------
+// Selectors
+//---------------------------------------------------------------------------
+$inputs           : ".field-text, .field-textarea, .field-select";
+$fields           : ".field-text, .field-textarea, .field-select, .field-checkbox-group, .field-radio-group, .field-valtext";
+$grid-selector    : "[class^='grid-'], [class*=' grid-'], [class^='tablet-grid-'], [class*=' tablet-grid-'], [class^='mobile-grid-'], [class*=' mobile-grid-']";
+$heading-selector : "[class^='heading-'], [class*=' heading-']";
+$icon-selector    : "[class^='icon-'], [class*=' icon-']";

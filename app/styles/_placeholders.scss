@@ -1,0 +1,325 @@
+//---------------------------------------------------------------------------
+// Utils
+//---------------------------------------------------------------------------
+%clearfix {
+    @include clearfix;
+}
+
+%hide-text {
+    display: block;
+    overflow: hidden;
+    text-indent: -9000px;
+}
+
+%align-middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .no-csstransforms & {
+        top: auto;
+    }
+}
+
+%text-overflow {
+    @include text-overflow;
+}
+
+
+//---------------------------------------------------------------------------
+// Columns
+//---------------------------------------------------------------------------
+%columns {
+    display: table;
+    width: 100%;
+}
+
+%column {
+    display: table-cell;
+    float: none !important;
+
+    vertical-align: middle;
+}
+
+
+//---------------------------------------------------------------------------
+// Table
+//---------------------------------------------------------------------------
+%table-bordered {
+    overflow: hidden;
+
+    border-style: hidden;
+    border-radius: $border-radius-large;
+}
+
+
+//---------------------------------------------------------------------------
+// Elements
+//---------------------------------------------------------------------------
+%element-close {
+    @include circle (24px);
+
+    border: 3px solid #fff;
+    background: $color-primary;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+
+    cursor: pointer;
+
+    &:before {
+        display: inline-block;
+        content: "\00d7";
+    }
+}
+
+
+//---------------------------------------------------------------------------
+// Grid
+//---------------------------------------------------------------------------
+// grid fix padding
+%grid-zero-padding {
+    @include grid-zero-padding;
+}
+
+%grid-fix-padding {
+    padding-right: 0;
+
+    &:first-of-type,
+    &:first-child {
+        padding-left: 0;
+    }
+
+    @include tablet-view {
+        &[class*="tablet-grid-100"] {
+            padding-left: 0;
+        }
+    }
+
+    @include mobile-view {
+        &[class*="mobile-grid-100"] {
+            padding-left: 0;
+        }
+    }
+}
+
+
+//---------------------------------------------------------------------------
+// Styles box
+//---------------------------------------------------------------------------
+// primary
+%style-box-primary-lighter {
+    border-style: solid;
+    border-color: $color-primary-lighter;
+    background: $color-primary-lighter;
+}
+
+%style-box-primary-x-lighter {
+    border-style: solid;
+    border-color: $border-color-primary-lighter;
+    background: $color-primary-x-lighter;
+}
+
+%style-box-primary-xx-lighter {
+    border-style: solid;
+    border-color: $border-color-primary-lighter;
+    background: $color-primary-xx-lighter;
+}
+
+// secondary
+%style-box-secondary-x-lighter {
+    border-style: solid;
+    border-color: #fede69;
+    background: $color-secondary-x-lighter;
+}
+
+// base
+%style-box-base-x-lighter {
+    border-style: solid;
+    border-color: $color-base-lighter;
+    background: $color-base-x-lighter;
+}
+
+// default
+%style-box-default {
+    border-style: solid;
+    border-color: $color-base-x-lighter;
+    background: $color-default;
+}
+
+%style-box-default-lighter {
+    border-style: solid;
+    border-color: $color-default-darker;
+    background: $color-default-lighter;
+}
+
+%style-box-default-x-lighter {
+    border-style: solid;
+    border-color: $color-default-darker;
+    background: $color-default-x-lighter;
+}
+
+// danger
+%style-box-danger-x-lighter {
+    border-style: solid;
+    border-color: $color-danger-lighter;
+    background: $color-danger-x-lighter;
+}
+
+// success
+%style-box-success {
+    border-style: solid;
+    border-color: $color-success-darker;
+    background: $color-success;
+}
+
+%style-box-success-x-lighter {
+    border-style: solid;
+    border-color: $color-success-lighter;
+    background: $color-success-x-lighter;
+}
+
+
+//---------------------------------------------------------------------------
+// Styles border
+//---------------------------------------------------------------------------
+%style-border-bottom {
+    border-bottom: 1px solid $border-color-base;
+    box-shadow: 0 1px #fff;
+}
+
+%style-border-bottom-lighter {
+    border-bottom: 1px solid $border-color-primary-lighter;
+    box-shadow: 0 1px #fff;
+}
+
+
+//---------------------------------------------------------------------------
+// Backgrounds
+//---------------------------------------------------------------------------
+%bg-default {
+    @include filter-gradient($bg-default-from, $bg-default-to);
+
+    background-color: $bg-default-to;
+    background-image: linear-gradient(180deg, $bg-default-from 0, $bg-default-to 100%);
+}
+
+%bg-primary {
+    @include filter-gradient($bg-primary-from, $bg-primary-to);
+
+    background-color: $bg-primary-to;
+    background-image: linear-gradient(180deg, $bg-primary-from 0, $bg-primary-to 100%);
+}
+
+%bg-secondary {
+    @include filter-gradient($bg-secondary-from, $bg-secondary-to);
+
+    background-color: $bg-secondary-to;
+    background-image: linear-gradient(180deg, $bg-secondary-from 0, $bg-secondary-to 100%);
+}
+
+
+//---------------------------------------------------------------------------
+// Forms
+//---------------------------------------------------------------------------
+// forms style
+%forms-style-border {
+    border: 1px solid $border-color-base;
+    border-radius: $border-radius-base;
+}
+
+%forms-style-bg {
+    background-color: #fff;
+}
+
+%forms-style-type {
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+%forms-style-focus {
+    @extend %forms-style-focus-box-shadow;
+
+    border-color: #008ec8;
+    outline: 0;
+}
+
+%forms-style-disabled {
+    border-color: #e0e0e0;
+    background: #f1f1f1;
+    color: #848484;
+}
+
+%forms-style-focus-box-shadow {
+    box-shadow: 0 0 6px rgba(0, 142, 200, .7);
+}
+
+// forms size
+%forms-size-base {
+    @extend %forms-width-base;
+    @extend %forms-height-base;
+}
+
+%forms-size-medium {
+    @extend %forms-width-medium;
+    @extend %forms-height-medium;
+}
+
+%forms-size-large {
+    @extend %forms-width-large;
+    @extend %forms-height-large;
+}
+
+// forms width
+%forms-width-base {
+    padding-left: $forms-padding-lr-base;
+    padding-right: $forms-padding-lr-base;
+}
+
+%forms-width-medium {
+    padding-left: $forms-padding-lr-medium;
+    padding-right: $forms-padding-lr-medium;
+
+    @include mobile-view {
+        padding-left: $forms-padding-lr-base;
+        padding-right: $forms-padding-lr-base;
+    }
+}
+
+%forms-width-large {
+    padding-left: $forms-padding-lr-large;
+    padding-right: $forms-padding-lr-large;
+
+    @include tablet-view {
+        padding-left: $forms-padding-lr-medium;
+        padding-right: $forms-padding-lr-medium;
+    }
+
+    @include mobile-view {
+        padding-left: $forms-padding-lr-base;
+        padding-right: $forms-padding-lr-base;
+    }
+}
+
+// forms height
+%forms-height-base {
+    padding-top: $forms-padding-tb-base;
+    padding-bottom: $forms-padding-tb-base;
+    line-height: 1.25;
+}
+
+%forms-height-medium {
+    padding-top: $forms-padding-tb-medium;
+    padding-bottom: $forms-padding-tb-medium;
+    line-height: 1.3;
+}
+
+%forms-height-large {
+    padding-top: $forms-padding-tb-large;
+    padding-bottom: $forms-padding-tb-large;
+    line-height: 1.25;
+}
